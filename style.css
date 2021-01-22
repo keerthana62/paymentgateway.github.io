@@ -1,0 +1,86 @@
+h2 {
+  margin-top: 0;
+  text-align: left;
+  color: black;
+  border: dotted;
+  border-color: thistle;
+  border-width: thick;
+  width: 100%;
+}
+body {
+  font-size: 1.5em;
+  margin-left: 2%;
+  text-indent: 3em;
+  font-style: italic;
+  font-family: verdana, sans serif;
+}
+p {
+  font-family: "Tahoma";
+  border-width: thin;
+  width: 100%;
+  color: lightpink;
+  margin-top: 100px;
+}
+#navbar {
+  overflow: hidden;
+  padding: 15px 10px;
+  transition: 0.4s;
+  position: fixed;
+  width: 50%;
+  top: 0;
+  right: 0;
+  z-index: 99;
+}
+
+#navbar a {
+  float: right;
+  color: lightpink;
+  text-align: center;
+  text-decoration: none;
+  line-height: 15px;
+  font-size: 18px;
+}
+#navbar a:hover {
+  background-color: gold;
+  color: black;
+}
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: lightpink;
+  border: none;
+  color: black;
+  text-align: center;
+  font-size: 20px;
+  padding: 15px;
+  width: 200px;
+  cursor: pointer;
+  margin-left: 550px;
+  margin-top: 80px;
+  font-family: cursive;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding: 20px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
